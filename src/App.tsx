@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import * as C from './Styles/App.styles'
-import {Item} from './Types/Item'
+import * as C from './Styles/App.styles';
+import {Item} from './Types/Item';
+import {ListItem} from './Components/ListItem';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     {
       id: 1,
       name: 'Comprar pão na padaria',
-      done: false
+      done: true
     },
     {
       id: 2,
@@ -31,7 +32,7 @@ function App() {
 
         {/* Lista de tarefas */}
         {list.map((item, index)=>(
-          <div>{item.name}</div>
+          <ListItem key={index} item={item} />
         ))}
 
       </C.Area>

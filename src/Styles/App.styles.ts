@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Area = styled.div`
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
     padding: 10px;
 `;
 
